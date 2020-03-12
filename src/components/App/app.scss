@@ -1,0 +1,12 @@
+@import 'src/styles/vars';
+
+.app {
+  font-family: $font;
+  background-color: $primaryColorVeryLight;
+  cursor: pointer;
+}
+
+html {
+  background-color: $primaryColorVeryLight;
+}
+

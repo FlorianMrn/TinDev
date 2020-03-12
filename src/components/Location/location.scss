@@ -1,0 +1,110 @@
+@import 'src/styles/vars';
+
+.location_newUser {
+  text-align: center;
+  height: 100vh;
+  font-size: 1.2em;
+
+  @media (min-width: $md) {
+    font-size: 2em;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 3em;
+  }
+}
+
+#header_location 
+{
+  width: 100%;
+  background-color: $cardColor;
+
+  img {
+    width: 54.1%;
+  }
+}
+
+.location {
+  
+  padding: 2rem;
+  background-color: $primaryColorLight;
+
+  
+  
+  h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: $secondaryColor;
+  }
+
+   p {
+     margin-top: 1.5rem;;
+     font-size: 0.7em;
+     color: $textColor;
+     font-style: italic;
+   }
+
+  h3 {
+    font-size: 1em;
+    margin-bottom: 1rem;
+    color: $secondaryColor;
+  }
+
+  .buttonChoice {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    justify-content: flex-start;
+    font-weight: bold;
+    background-color: $cardColor;
+
+    &:hover {
+      background-color: $eventColorBlue;
+      color: grey;
+    }
+  }
+}
+
+.camp_logo {
+    display: inline;
+    padding-right: 1rem;
+}
+
+.dropdown-menu.show {
+  background-color: $cardColor;
+}
+
+.dropdown-item {
+  color: white !important;
+  font-size: 0.9em;
+}
+
+#see {
+  margin: 1.5rem 0 0.5rem 0;
+  background-color: $linkColor;
+
+  &:hover {
+    background-color: $eventColorBlue;
+    color: grey;
+  }
+}
+
+.choice {
+  color: white;
+  font-size: 0.9em;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+input.input {
+  background-color: #1d2c4e;
+  border: 5px solid $primaryColorVeryLight;
+  border-radius: 10px;
+  margin-bottom: .5rem;
+  padding: 0.5rem;
+  color: white;
+}
+
+
+

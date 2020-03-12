@@ -1,0 +1,20 @@
+@import 'src/styles/vars';
+
+.helpAndAssistance {
+
+  margin: 1rem;
+  color: $textColor;
+
+  h1 {
+    color: $eventColorBlue;
+    margin: 1.5rem 0 1.5rem 0;
+  }
+}
+
+.terms {
+  text-align: justify;
+}
+
+.contact {
+  margin-top: 2rem;
+}

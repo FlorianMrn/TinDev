@@ -1,0 +1,112 @@
+@import 'src/styles/vars';
+
+#matrix-re {
+  color: rgb(233, 233, 233);
+  padding: .5rem 0 0 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+
+  @media (min-width: $sm) {
+      font-size: 1.8em;
+  }
+
+  .h3 {
+    font-size: 1.3em;
+    color: $linkColor !important;
+    @media (min-width: $sm) {
+
+  }
+  }
+
+  p {
+    font-size: 0.6em;
+    margin-bottom: 0;
+  }
+}
+
+.what{
+  padding: .5rem 0 1rem 0;
+  font-size: 0.9em;
+  color: $linkColor;
+}
+
+#choice-re {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 0 0 0.5rem;
+  font-size: 0.7em;
+
+  
+  div {
+    margin: 1rem;
+    color: rgb(61, 61, 61);
+    background-color: rgb(214, 214, 214);
+    border : 1px solid $secondaryColor;  
+    float: left;
+    width: calc(33% - 8px);
+    height: 6.5rem;
+    margin: 0 8px 9px 0;
+    border-radius: 0.3%;
+
+    &:hover {
+      transform: scale(1.02);
+      //background-color: $eventColorBlue;
+      color: $secondaryColor;
+      background: repeating-linear-gradient(
+      45deg,
+      $primaryColor,
+      $primaryColor 10px,
+      $primaryColorVeryLight 10px,
+      $primaryColorVeryLight 30px
+      );
+    }
+
+    &:checked {
+      background-color: crimson;
+    }
+
+    p {
+      line-height: 6.5rem;
+      font-size: 1em;
+          
+    }
+  }
+}
+
+#next-re{
+  font-size: 1.4em;
+  color: $textColor;
+  
+  margin: auto;
+    &:hover {
+    color: $secondaryColor;
+    //background-color: $eventColorBlue;
+    }
+}
+
+
+
+// Set the p who were choosen by the user
+.on {
+  color: $secondaryColor;
+  //background-color: $eventColorBlue;
+  background: repeating-linear-gradient(
+  45deg,
+  $primaryColor,
+  $primaryColor 10px,
+  $primaryColorVeryLight 10px,
+  $primaryColorVeryLight 30px
+  );
+}
+
+img.matrix-img.img-fluid.rounded-circle {
+  width: 92px;
+
+          @media (min-width: $sm) {
+            width: 300px;
+        }
+}

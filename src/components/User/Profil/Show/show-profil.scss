@@ -1,0 +1,75 @@
+@import 'src/styles/vars';
+
+.show-profil {
+  background-color: $primaryColorVeryLight;
+  color: $textColor;
+
+  &-info {
+    text-align: center;
+    .avatar{
+      border-radius:100%;
+      margin:2rem 0 1rem;
+    }
+    h2{
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+    h3{
+      font-size: 1em;
+      color: $secondaryColor;
+      small{
+        background-color: black;
+        color: blanchedalmond;
+        padding: .25rem .5rem;
+        border-radius: .5rem;
+        display: inline-block;
+      }
+    }
+    &-bio {
+      padding: .8rem;
+      background-color: $cardColor;
+      border-radius: .5rem;
+      text-align: left;
+      margin-bottom: 1.6rem;
+      p{
+        margin-bottom: 0;
+      }
+    }
+  }
+  .wishes, .technos, .links{
+    text-align: left;
+    margin-bottom: 1.6rem;
+  }
+
+  .wishes{
+    .list{
+      li{
+        display: inline-block;
+        margin-right: 1rem;
+        font-weight: bold;
+        color: $linkColor;
+      }
+      :last-child{
+        margin-right:0;
+      }
+    }
+  }
+  
+  .technos{
+    .list{
+      li{
+        display: inline-block;
+        padding:.25rem .5rem;
+        background-color: black;
+        color: blanchedalmond;
+        border-radius: .5rem;
+        margin-right: .5rem;
+        font-size: .7em;
+        font-weight: bold;
+      }
+      :last-child{
+        margin-right:0;
+      }
+    }
+  }  
+}

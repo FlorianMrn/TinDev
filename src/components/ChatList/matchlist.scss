@@ -1,0 +1,76 @@
+@import "src/styles/vars";
+
+.chatlist {
+
+
+  & .scrolling-wrapper {
+    background-color: #2a2566;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+
+    & .user-card {
+      flex: 0 0 auto;
+      margin: 0.6rem;
+      width: 80px;
+    }
+  }
+
+  & .messages-list {
+    height: calc(100vh - 152px);
+    overflow-y: scroll;
+  }
+
+  @media (min-width: $xs) {
+    & .messages-list {
+      height: calc(100vh - 152px);
+    }
+  }
+
+  @media (min-width: $md) {
+    .scrolling-wrapper {
+      & .user-card {
+        width: 100px;
+        margin: 0.8rem;
+      }
+    }
+
+    & .messages-list {
+      height: calc(100vh - 152px);
+    }
+  }
+
+  @media (min-width: $lg) {
+    .scrolling-wrapper {
+      & .user-card {
+        width: 125px;
+      }
+    }
+
+    & .messages-list {
+      height: calc(100vh - 172px);
+    }
+  }
+}
+
+// remove scrollbar but keep content scrollable
+::-webkit-scrollbar {
+  display: none;
+}
+
+// @import 'src/styles/vars';
+
+// .scrolling-wrapper {
+//   overflow-x: scroll;
+//   scroll-behavior: smooth;
+
+//   & .user-card {
+//     flex: 0 0 auto;
+//     margin: .8rem .6rem;
+//     width: 75px;
+//   }
+// }
+
+// // remove scrollbar but keep content scrollable
+// ::-webkit-scrollbar {
+//   display: none;
+// }
