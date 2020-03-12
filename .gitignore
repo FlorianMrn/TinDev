@@ -2,11 +2,14 @@ node_modules/
 dist/
 .vs/
 .vs-code/
+server/
 
 .DS_Store
 Thumbs.db
 
 yarn-error.log
 .eslintrc
+yarn.lock
+package-lock.json
 
 
